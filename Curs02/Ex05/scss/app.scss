@@ -11,6 +11,12 @@
 }
 
 @for $i from 1 through 9 {
+  .box-0#{$i} {
+    border: #{$i}px solid black;
+  }
+}
+
+@for $i from 1 through 9 {
   .box-#{$i} {
     @if $i % 2 == 0 {
       background-color: gray;
