@@ -58,6 +58,57 @@ body {
   flex-grow: 1;
 }
 
-.flex-container-01 > :first-child + .flex-item + .flex-item {
+.flex-container-01 :first-child + .flex-item + .flex-item {
   flex-grow: 2;
+}
+
+.flex-container-02 {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-container-02 :nth-child(1) + .flex-item {
+  flex-grow: 1;
+}
+
+.flex-container-03 {
+  flex-direction: column-reverse;
+}
+
+.flex-container-03 :nth-child(2) {
+  flex-grow: 2;
+}
+
+.flex-container-03 :nth-last-child(2) {
+  flex-grow: 1;
+}
+
+.flex-container-04 {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-container-04 div:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+.flex-container-05 {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.flex-container-05 :first-of-type + .flex-item + .flex-item {
+  flex-grow: 2;
+}
+
+.flex-container-05 :nth-last-of-type(2) {
+  flex-grow: 1;
+}
+
+.flex-container-06 {
+  flex-direction: column;
+}
+
+.flex-container-06 :last-of-type {
+  flex-grow: 1;
 }
